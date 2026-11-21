@@ -1,5 +1,5 @@
 #ifndef AppVersion
-  #define AppVersion "0.1.4"
+  #define AppVersion "1.0.0"
 #endif
 
 [Setup]
@@ -34,6 +34,8 @@ Name: "desktopicon"; Description: "Создать ярлык на рабочем
 [Files]
 Source: "..\target\release\arizona-rust-launcher.exe"; DestDir: "{app}"; DestName: "ArizonaRustLauncher.exe"; Flags: ignoreversion
 Source: "..\README.md"; DestDir: "{app}"; Flags: ignoreversion
+Source: "..\CONTRIBUTORS.md"; DestDir: "{app}"; Flags: ignoreversion
+Source: "..\docs\screenshot.png"; DestDir: "{app}\docs"; Flags: ignoreversion
 
 [Icons]
 Name: "{autoprograms}\Arizona Rust Launcher"; Filename: "{app}\ArizonaRustLauncher.exe"
